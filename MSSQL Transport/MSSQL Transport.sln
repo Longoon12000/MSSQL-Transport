@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29721.120
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSSQL Transport Library", "MSSQL Transport Library\MSSQL Transport Library.csproj", "{34DCE8B3-A0F0-4BB1-9EFE-E76B77E04673}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSSQL Transport UI", "MSSQL Transport UI\MSSQL Transport UI.csproj", "{2DB104BF-E0EB-40EA-B411-65835D1809F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34DCE8B3-A0F0-4BB1-9EFE-E76B77E04673}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34DCE8B3-A0F0-4BB1-9EFE-E76B77E04673}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34DCE8B3-A0F0-4BB1-9EFE-E76B77E04673}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34DCE8B3-A0F0-4BB1-9EFE-E76B77E04673}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DB104BF-E0EB-40EA-B411-65835D1809F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DB104BF-E0EB-40EA-B411-65835D1809F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DB104BF-E0EB-40EA-B411-65835D1809F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DB104BF-E0EB-40EA-B411-65835D1809F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7B94B29A-F1EB-48B2-978F-BFB61AEA4341}
+	EndGlobalSection
+EndGlobal

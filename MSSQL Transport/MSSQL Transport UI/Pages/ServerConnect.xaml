@@ -1,0 +1,68 @@
+﻿<Page x:Class="MSSQLTransportUI.Pages.ServerConnect"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MSSQLTransportUI.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Connect to server">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <GroupBox Grid.Row="0" Grid.Column="0" Header="{StaticResource server}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" Content="{StaticResource server_address}" />
+                <TextBox Grid.Row="0" Grid.Column="1" Name="txtServerAddress" />
+            </Grid>
+        </GroupBox>
+        <GroupBox Grid.Row="1" Grid.Column="0" Header="{StaticResource authentication}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <RadioButton Grid.Row="0" Grid.Column="0" Content="{StaticResource windows_authentication}" IsChecked="True" Checked="RadioButton_Checked" />
+                <RadioButton Grid.Row="1" Grid.Column="0" Name="rbSqlAuthentication" Content="{StaticResource sql_authentication}" Checked="RadioButton_Checked" />
+                <GroupBox Grid.Row="2" Grid.Column="0" Name="gbSqlAuthentication" Header="{StaticResource sql_authentication}" IsEnabled="False">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Label Grid.Row="0" Grid.Column="0" Content="{StaticResource username}" />
+                        <TextBox Grid.Row="0" Grid.Column="1" Name="txtUsername" />
+
+                        <Label Grid.Row="1" Grid.Column="0" Content="{StaticResource password}" />
+                        <PasswordBox Grid.Row="1" Grid.Column="1" Name="txtPassword" />
+                    </Grid>
+                </GroupBox>
+            </Grid>
+        </GroupBox>
+        <Button Grid.Row="2" Grid.Column="0" Name="btnConnect" Content="{StaticResource connect}" HorizontalAlignment="Right" Click="btnConnect_Click" IsDefault="True" />
+        <StackPanel Grid.Row="3" Grid.Column="0" Name="pnlProgress" Orientation="Vertical" Visibility="Hidden">
+            <Label Content="{StaticResource connection_test}" />
+            <ProgressBar IsIndeterminate="True" />
+        </StackPanel>
+    </Grid>
+</Page>

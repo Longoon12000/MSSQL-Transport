@@ -1,0 +1,34 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=System.Runtime">
+    <system:String x:Key="server">Server</system:String>
+    <system:String x:Key="server_address">Server address</system:String>
+    <system:String x:Key="authentication">Authentication</system:String>
+    <system:String x:Key="windows_authentication">Windows Authentication</system:String>
+    <system:String x:Key="sql_authentication">SQL Authentication</system:String>
+    <system:String x:Key="username">Username</system:String>
+    <system:String x:Key="password">Password</system:String>
+    <system:String x:Key="connect">Connect</system:String>
+    <system:String x:Key="connection_test">Checking server connection...</system:String>
+    <system:String x:Key="error_title_missing_field">Error: Missing or invalid value</system:String>
+    <system:String x:Key="error_server_address_required">A valid server address is required.</system:String>
+    <system:String x:Key="error_sql_username_required">A valid SQL username is required</system:String>
+    <system:String x:Key="error_sql_password_required">A valid SQL password is required</system:String>
+    <system:String x:Key="error_sql_connection">A connection could not be established to the SQL server:
+{0}</system:String>
+    <system:String x:Key="error_title_sql_connection">Connection error</system:String>
+    <system:String x:Key="select">Select</system:String>
+    <system:String x:Key="retrieving_databases">Retrieving databases...</system:String>
+    <system:String x:Key="export">Export</system:String>
+    <system:String x:Key="import">Import</system:String>
+    <system:String x:Key="file">File</system:String>
+    <system:String x:Key="browse">...</system:String>
+    <system:String x:Key="error_no_path">A valid path must be selected</system:String>
+    <system:String x:Key="error_title_path">Path error</system:String>
+    <system:String x:Key="error_no_file">Selected file doesn't exist</system:String>
+    <system:String x:Key="tables">Tables</system:String>
+    <system:String x:Key="views">Views</system:String>
+    <system:String x:Key="stored_procedures">Stored Procedures</system:String>
+    <system:String x:Key="retrieving_objects">Retrieving objects...</system:String>
+    <system:String x:Key="file_dialog_filter">Database transfer files (*.dbt)|*.dbt</system:String>
+</ResourceDictionary>
